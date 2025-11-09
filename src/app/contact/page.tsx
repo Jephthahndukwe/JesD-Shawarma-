@@ -34,7 +34,7 @@ export default function ContactPage() {
             {/* Contact Cards Section */}
             <div className="bg-[#09662B]">
                 {/* First Row */}
-                <div className="flex flex-col md:flex-row items-center justify-center gap-[5rem]">
+                <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-[5rem] md:mt-0 mt-[5rem]">
                     {/* Image */}
                     <Image
                         src="/images/kebab-plate.png"
