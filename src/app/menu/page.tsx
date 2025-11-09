@@ -155,12 +155,12 @@ export default function Page() {
                     {/* Menu Grid */}
                     <div className="flex flex-wrap justify-center gap-[4rem] md:gap-[10rem] max-w-[1400px] mx-auto mt-[5rem]">
                         {menuItems.map((item, index) => (
-                            <div key={index} className="flex flex-col items-center">
+                            <div key={index} className="flex flex-col items-center group">
                                 <div className={`relative overflow-hidden ${getRadiusClass(item.radius)}`}>
                                     <img
                                         src={item.image}
                                         alt={item.title}
-                                        className="w-[350px] h-[500px] object-cover"
+                                        className="w-[350px] h-[500px] object-cover transform transition-transform duration-700 ease-in-out group-hover:scale-110"
                                     />
                                 </div>
                                 <h3 className="text-xl text-center font-bold text-[#D97706] font-sans mt-4">
@@ -169,6 +169,7 @@ export default function Page() {
                             </div>
                         ))}
                     </div>
+
                 </div>
             </div>
 

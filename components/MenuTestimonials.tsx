@@ -8,14 +8,17 @@ const MenuTestimonials = () => {
         {
             image: '/images/beef-shawarma.png',
             title: 'Beef Shawarma',
+            radius: 'left',
         },
         {
             image: '/images/chicken-shawarma.png',
             title: 'Chicken Shawarma',
+            radius: 'round',
         },
         {
             image: '/images/drinks.png',
             title: 'Drinks',
+            radius: 'right',
         },
     ]
 
@@ -43,6 +46,20 @@ const MenuTestimonials = () => {
         },
     ]
 
+    // Function to pick radius class based on type
+    const getRadiusClass = (radius: string) => {
+        switch (radius) {
+            case 'left':
+                return 'rounded-tl-[60px] rounded-br-[60px]'
+            case 'right':
+                return 'rounded-tr-[60px] rounded-bl-[60px]'
+            case 'round':
+                return 'rounded-[60px]'
+            default:
+                return ''
+        }
+    }
+
     return (
         <div className="bg-[#FFFBEB] relative overflow-hidden">
             {/* Our Menu Section */}
@@ -51,14 +68,14 @@ const MenuTestimonials = () => {
                     Our Menu
                 </h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 mb-12">
+                 <div className="grid grid-cols-1 md:grid-cols-3 mb-12">
                     {menuItems.map((item, index) => (
-                        <div key={index} className="">
-                            <div className="relative overflow-hidden mb-4">
+                        <div key={index}>
+                            <div className={`relative overflow-hidden mb-4 ${getRadiusClass(item.radius)}`}>
                                 <img
                                     src={item.image}
                                     alt={item.title}
-                                    className="w-[406px] h-[604px] object-cover"
+                                    className="w-[406px] h-[604px] object-cover transform scale-105 transition-transform duration-500 hover:scale-100"
                                 />
                             </div>
                             <h3 className="text-xl text-center md:-ml-[5rem] font-bold text-[#D97706] font-sans mb-2">
@@ -152,26 +169,27 @@ const MenuTestimonials = () => {
 
             {/* Nothing Beats A Well Prepared Shawarma Section */}
             <div className="container relative mt-[10%] mx-auto px-6 pb-16 lg:pb-24">
-                <div className="bg-gradient-to-br from-green-800 to-green-900 rounded-3xl overflow-hidden shadow-2xl">
-                    <div className="">
-                        {/* Left - Text */}
-                        <div className="p-8 lg:p-16">
-                            <h2 className="text-3xl lg:text-5xl font-bold text-white font-sans leading-tight text-center">
-                                Nothing Beats A Well Prepared Shawarma
-                            </h2>
-                        </div>
-
-                        {/* Right - Image */}
-                        <div className="relative h-full min-h-[300px] lg:min-h-[500px]">
-                            <img
-                                src="/images/shawarma-transparent.png"
-                                alt="Delicious Shawarma"
-                                className="absolute inset-0 w-full h-full object-cover lg:object-contain"
-                            />
-                        </div>
-                    </div>
-                </div>
+    <div className="bg-gradient-to-br from-green-800 to-green-900 rounded-3xl overflow-hidden shadow-2xl">
+        <div>
+            {/* Left - Text */}
+            <div className="p-8 lg:p-16">
+                <h2 className="text-3xl lg:text-5xl font-bold text-white font-sans leading-tight text-center">
+                    Nothing Beats A Well Prepared Shawarma
+                </h2>
             </div>
+
+            {/* Right - Image */}
+            <div className="relative h-full min-h-[300px] lg:min-h-[500px] flex justify-center items-center">
+                <img
+                    src="/images/shawarma-transparent.png"
+                    alt="Delicious Shawarma"
+                    className="w-[300px] lg:w-[500px] object-contain transform transition-transform duration-700 hover:rotate-[360deg]"
+                />
+            </div>
+        </div>
+    </div>
+</div>
+
         </div>
     )
 }

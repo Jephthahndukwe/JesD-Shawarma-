@@ -5,8 +5,8 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <div className='bg-[#764D1F] py-32 px-[100px]'>
-            <div className='flex items-start justify-center flex-wrap gap-[10rem]'>
+        <div className='bg-[#764D1F] py-32 md:px-[100px] px-4'>
+            <div className='flex items-start justify-center flex-wrap md:gap-[10rem] gap-[12rem]'>
                 <div className='flex-1'>
                     <Image
                         src='/images/logo.png'
@@ -21,7 +21,7 @@ export default function Footer() {
                         <Link href='https://twitter.com/shawarmadelight' target='_blank'><Twitter className='text-[#9CA3AF]'/></Link>
                     </div>
                 </div>
-                <div className='flex-1'>
+                <div className='flex-1 md:mt-0 -mt-[6rem]'>
                     <h2 className='text-white font-sans text-[18px] font-bold'>Contact Us</h2>
                     <div className='flex items-center gap-2 mt-5'>
                         <LocationEdit className='text-[#D97706]' />
@@ -40,7 +40,7 @@ export default function Footer() {
                         <p className='text-white font-sans font-normal text-[14px]'>Mon-Thu: 11:00 AM - 9:00 PM</p>
                     </div>
                 </div>
-                <div className='flex-1'>
+                <div className='flex-1 md:mt-0 -mt-[6rem]'>
                     <h2 className='text-white font-sans text-[18px] font-bold'>Quick Links</h2>
                     <ul className='flex flex-col gap-2'>
                         <li className='mt-4'><Link href='/home' className='text-white font-sans text-white font-normal text-[14px]'>Home</Link></li>
@@ -49,7 +49,7 @@ export default function Footer() {
                         <li className='mt-4'><Link href='/contact' className='text-white font-sans text-white font-normal text-[14px]'>Contact Us</Link></li>
                     </ul>
                 </div>
-                <div className='flex-1'>
+                <div className='flex-1 md:mt-0 -mt-[6rem]'>
                     <h2 className='text-white font-sans text-[18px] font-bold'>Newsletter</h2>
                     <p className='text-white font-sans font-normal text-[15px] mt-4'>Subscribe to our newsletter to get the latest updates and special offers.</p>
                     <div className='mt-4'>
@@ -60,11 +60,11 @@ export default function Footer() {
             </div>
 
             <div className='bg-[#1F2937] w-full h-[1px] mt-10' />
-            <div className='flex items-center justify-between mt-6'>
+            <div className='md:flex items-center justify-between mt-6'>
                 <div>
-                    <p className='text-[#9CA3AF] font-sans font-normal text-[14px]'>© {new Date().getFullYear()} JesD. All rights reserved.</p>
+                    <p className='text-[#9CA3AF] font-sans font-normal text-[14px] text-center'>© {new Date().getFullYear()} JesD. All rights reserved.</p>
                 </div>
-                <div className='flex items-center gap-5'>
+                <div className='flex items-center justify-center gap-5 md:mt-0 mt-4'>
                     <p className='text-[#9CA3AF] font-sans font-normal text-[14px]'><Link href='/privacy-policy'>Privacy Policy</Link></p>
                     <p className='text-[#9CA3AF] font-sans font-normal text-[14px]'><Link href='/terms-conditions'>Terms of service</Link></p>
                 </div>

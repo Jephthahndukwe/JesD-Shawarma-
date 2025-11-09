@@ -33,14 +33,14 @@ export default function page() {
 
   return (
     <div className='bg-[#FFFBEB]'>
-       <div className="relative z-50">
-                <Navbar />
-              </div>
+      <div className="relative z-50">
+        <Navbar />
+      </div>
 
       <div className='h-screen relative bg-cover bg-center' style={{ backgroundImage: "url('/images/shawarma-home4.png')" }}>
         <div className="absolute inset-0 bg-black/30"></div>
         <div className='relative flex items-center justify-center h-screen'>
-          <h1 className='text-normal font-sans text-[100px] text-white text-center'>About us</h1>
+          <h1 className='text-normal font-sans md:text-[100px] text-[70px] text-white text-center'>About us</h1>
         </div>
       </div>
 
@@ -76,11 +76,9 @@ export default function page() {
               {/* Shawarma Image */}
               <div className="relative z-10 bg-white rounded-2xl shadow-2xl overflow-hidden mb-8">
                 <img
-                  // width={600}
-                  // height={600}
                   src="/images/shawarma-home2.png"
                   alt="Delicious shawarma wrap"
-                  className="w-full md:h-auto h-[250px] object-cover"
+                  className="w-full md:h-auto h-[250px] object-cover transform scale-105 transition-transform duration-500 hover:scale-100"
                 />
               </div>
 

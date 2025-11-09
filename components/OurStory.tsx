@@ -9,7 +9,7 @@ const OurStory = () => {
             {/* Our Story Section */}
             <div className="container mx-auto h-screen px-6 py-20 lg:py-32 relative">
                 {/* Pink Blob Background - LARGE AND CENTERED */}
-                <div className="absolute top-1/2 left-1/3 -translate-x-1/3 -translate-y-1/2 w-[600px] h-[500px] lg:w-[700px] lg:h-[700px]">
+                <div className="absolute top-1/2 left-1/3 -translate-x-1/3 -translate-y-1/2 w-[390px] h-[500px] lg:w-[700px] lg:h-[700px]">
                     <img
                         src="/images/apple.png"
                         alt="Pink Blob"
@@ -49,11 +49,9 @@ const OurStory = () => {
                         {/* Shawarma Image */}
                         <div className="relative z-10 bg-white rounded-2xl shadow-2xl overflow-hidden mb-8">
                             <img
-                                // width={600}
-                                // height={600}
                                 src="/images/shawarma-home2.png"
                                 alt="Delicious shawarma wrap"
-                                className="w-full md:h-auto h-[250px] object-cover"
+                                className="w-full md:h-auto h-[250px] object-cover transform scale-105 transition-transform duration-500 hover:scale-100"
                             />
                         </div>
 

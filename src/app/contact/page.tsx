@@ -10,8 +10,8 @@ export default function ContactPage() {
     return (
         <div className="min-h-screen bg-[#FFFBEB]">
             <div className="relative z-50">
-                     <Navbar />
-                   </div>
+                <Navbar />
+            </div>
 
             {/* Hero Section */}
             <div className="relative h-screen bg-black overflow-hidden">
@@ -34,7 +34,7 @@ export default function ContactPage() {
             {/* Contact Cards Section */}
             <div className="bg-[#09662B]">
                 {/* First Row */}
-                <div className="flex flex-col md:flex-row items-center justify-center gap-5">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-[5rem]">
                     {/* Image */}
                     <Image
                         src="/images/kebab-plate.png"
@@ -61,14 +61,14 @@ export default function ContactPage() {
                 </div>
 
                 {/* Second Row */}
-                <div className="flex flex-col md:flex-row items-center justify-center gap-5">
+                <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-[5rem] md:pb-0 pb-[5rem] md:mt-0 mt-[5rem]">
                     {/* Card */}
                     <div className="flex-1 flex items-center justify-center h-full">
-                        <div className="bg-[#fff] p-8 rounded-[20px] flex flex-col items-center justify-center text-center shadow-md">
+                        <div className="bg-[#fff] md:p-8 p-4 rounded-[20px] flex flex-col items-center justify-center text-center shadow-md">
                             <div className="bg-[#000] p-2 rounded-full w-16 h-16 flex items-center justify-center mb-3">
                                 <MapPin className="text-white" size={40} />
                             </div>
-                            <p className="bg-[#09662B] text-white px-6 py-2 rounded-[20px] text-center font-sans font-semibold leading-relaxed">
+                            <p className="bg-[#09662B] text-white px-6 py-2 rounded-[20px] text-center font-sans font-semibold leading-relaxed mt-4">
                                 <Link
                                     href="https://www.google.com/maps/place/22+Ogundana+St,+Off+Allen+Avenue,+Ikeja,+Lagos/"
                                     target="_blank"
@@ -90,6 +90,7 @@ export default function ContactPage() {
                         className="object-cover"
                     />
                 </div>
+
             </div>
 
             <WhatsappOrder />
