@@ -43,7 +43,7 @@ export default function Footer() {
                 <div className='flex-1 md:mt-0 -mt-[6rem]'>
                     <h2 className='text-white font-sans text-[18px] font-bold'>Quick Links</h2>
                     <ul className='flex flex-col gap-2'>
-                        <li className='mt-4'><Link href='/home' className='text-white font-sans text-white font-normal text-[14px]'>Home</Link></li>
+                        <li className='mt-4'><Link href='/' className='text-white font-sans text-white font-normal text-[14px]'>Home</Link></li>
                         <li className='mt-4'><Link href='/menu' className='text-white font-sans text-white font-normal text-[14px]'>Our Menu</Link></li>
                         <li className='mt-4'><Link href='/about' className='text-white font-sans text-white font-normal text-[14px]'>About Us</Link></li>
                         <li className='mt-4'><Link href='/contact' className='text-white font-sans text-white font-normal text-[14px]'>Contact Us</Link></li>
