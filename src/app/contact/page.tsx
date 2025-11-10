@@ -61,7 +61,7 @@ export default function ContactPage() {
                 </div>
 
                 {/* Second Row */}
-                <div className="flex md:flex-row items-center justify-center gap-[5rem] md:mt-0 mt-[5rem]">
+                <div className="flex md:flex-row flex-col items-center justify-center gap-[5rem] md:mt-0 mt-[5rem]">
                     {/* Card */}
                     <div className="flex-1 flex items-center justify-center h-full">
                         <div className="bg-[#fff] md:p-8 p-4 rounded-[20px] flex flex-col items-center justify-center text-center shadow-md">
