@@ -183,7 +183,7 @@ const MenuTestimonials = () => {
                 <img
                     src="/images/shawarma-transparent.png"
                     alt="Delicious Shawarma"
-                    className="w-[300px] lg:w-[500px] object-contain transform transition-transform duration-700 hover:rotate-[360deg]"
+                    className="w-[500px] md:w-[900px] object-contain transform transition-transform duration-700 hover:rotate-[360deg]"
                 />
             </div>
         </div>
