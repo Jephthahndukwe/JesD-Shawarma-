@@ -6,7 +6,7 @@ import React from 'react'
 export default function Footer() {
     return (
         <div className='bg-[#764D1F] py-32 md:px-[100px] px-4'>
-            <div className='flex items-start justify-center flex-wrap md:gap-[10rem] gap-[12rem]'>
+            <div className='flex items-start justify-center flex-wrap md:gap-[10rem] gap-[14rem]'>
                 <div className='flex-1'>
                     <Image
                         src='/images/logo.png'
