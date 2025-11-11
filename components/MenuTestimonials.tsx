@@ -34,14 +34,14 @@ const MenuTestimonials = () => {
             name: 'James K.',
             rating: 5,
             text: '"I ordered online for a family dinner and was impressed by how quickly it arrived. Everything was still hot and fresh. The mixed shawarma platter is perfect for sharing!.',
-            avatar: '/images/avatar.png',
+            avatar: '/images/avatar2.png',
             job: 'Food Blogger'
         },
         {
             name: 'Miguel R.',
             rating: 5,
             text: '"There customer service is so welcoming and incredibly friendly. I’ve been coming weekly for their chicken shawarma wrap.. and it’s so creamy. Never disappoints everytime.',
-            avatar: '/images/avatar.png',
+            avatar: '/images/avatar3.png',
             job: 'Regular Customer'
         },
     ]
